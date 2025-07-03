@@ -1,36 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart } from '../redux/cartSlice';
 import { addToWishlist, removeFromWishlist } from '../redux/wishlistSlice';
+import { fetchProducts } from '../redux/productSlice';
 import { toast } from 'react-toastify';
 
 const Products = () => {
   const dispatch = useDispatch();
   const wishlist = useSelector(state => state.wishlist);
-  const storeProducts = useSelector((state) => state.product?.items);
-  const products = storeProducts && storeProducts.length > 0
-    ? storeProducts
-    : [
-        {
-          id: 1,
-          name: 'T-Shirt',
-          price: 1000,
-          image: '/images/tshirt.jpg'
-        },
-        {
-          id: 2,
-          name: 'Jeans',
-          price: 2000,
-          image: '/images/jeans.jpg'
-        },
-        {
-          id: 3,
-          name: 'Shoes',
-          price: 3000,
-          image: '/images/shoes.jpg'
-        }
-      ];
+  const { items: products, loading } = useSelector(state => state.product);
 
+  useEffect(() => {
+    dispatch(fetchProducts());
+  }, [dispatch]);
+
+  if (loading) return <p style={{ padding: '2rem' }}>Loading products…</p>;
 
   return (
     <div style={{ padding: '2rem' }}>
@@ -48,16 +32,15 @@ const Products = () => {
         >
           <img
             src={product.image}
-            alt={product.name}
+            alt={product.title || product.name}
             style={{ width: '100%', height: 'auto', borderRadius: '4px' }}
           />
-          <h4>{product.name}</h4>
+          <h4>{product.title || product.name}</h4>
           <p>₹{product.price}</p>
           <button
             onClick={() => {
-              console.log('Dispatching to cart:', product);
               dispatch(addToCart(product));
-              toast.success(`${product.name} added to cart!`);
+              toast.success(`${product.title || product.name} added to cart!`);
             }}
             style={{
               backgroundColor: '#28a745',
@@ -75,7 +58,7 @@ const Products = () => {
             <button
               onClick={() => {
                 dispatch(removeFromWishlist(product.id));
-                toast.warn(`${product.name} removed from wishlist!`);
+                toast.warn(`${product.title || product.name} removed from wishlist!`);
               }}
               style={{
                 backgroundColor: '#dc3545',
@@ -94,7 +77,7 @@ const Products = () => {
             <button
               onClick={() => {
                 dispatch(addToWishlist(product));
-                toast.info(`${product.name} added to wishlist!`);
+                toast.info(`${product.title || product.name} added to wishlist!`);
               }}
               style={{
                 backgroundColor: '#ffc107',

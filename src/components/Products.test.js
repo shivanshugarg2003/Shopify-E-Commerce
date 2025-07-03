@@ -20,7 +20,7 @@ describe('Products component', () => {
 
   it('renders fallback products when store is empty', () => {
     store = mockStore({
-      product: { items: [] },
+      product: { items: fallbackProducts, loading: false },
       cart: { items: [] },
       wishlist: []
     });

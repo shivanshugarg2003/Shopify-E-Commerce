@@ -16,7 +16,9 @@ import { Provider } from 'react-redux';
 import { configureStore } from '@reduxjs/toolkit';
 import cartReducer from '../redux/cartSlice';
 import wishlistReducer, { removeFromWishlist } from '../redux/wishlistSlice';
+import productReducer from '../redux/productSlice';
 import { toast } from 'react-toastify';
+import * as productSlice from '../redux/productSlice';
 
 // Mock toast to prevent console noise
 jest.mock('react-toastify', () => ({
@@ -31,17 +33,33 @@ const setupStore = (preloadedState = {}) =>
     reducer: {
       cart: cartReducer,
       wishlist: wishlistReducer,
+      product: productReducer,
     },
     preloadedState: {
       cart: preloadedState.cart || [],
       wishlist: preloadedState.wishlist || [],
+      product: preloadedState.product || { items: [], loading: false },
     },
   });
 
-test('adds product to cart when "Add to Cart" is clicked', () => {
+test('adds product to cart when "Add to Cart" is clicked', async () => {
+  jest.spyOn(productSlice, 'fetchProducts').mockImplementation(() => () => {});
+
   const store = setupStore({
     cart: [],
     wishlist: [],
+    product: {
+      items: [
+        {
+          id: 1,
+          name: 'Test Product',
+          title: 'Test Product',
+          price: 99,
+          image: 'https://example.com/product.jpg',
+        },
+      ],
+      loading: false,
+    },
   });
 
   render(
@@ -50,7 +68,9 @@ test('adds product to cart when "Add to Cart" is clicked', () => {
     </Provider>
   );
 
-  const addToCartButton = screen.getAllByText(/add to cart/i)[0];
+  await waitFor(() => expect(screen.queryByText('Loading products…')).not.toBeInTheDocument());
+  const addToCartButton = screen.getByText(/add to cart/i);
+
   fireEvent.click(addToCartButton);
 
   expect(toast.success).toHaveBeenCalledWith(expect.stringContaining('added to cart'));
