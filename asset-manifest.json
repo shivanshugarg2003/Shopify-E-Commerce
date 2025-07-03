@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Shopify-E-Commerce/static/css/main.228902f1.chunk.css",
+    "main.js": "/Shopify-E-Commerce/static/js/main.f28fabf1.chunk.js",
+    "main.js.map": "/Shopify-E-Commerce/static/js/main.f28fabf1.chunk.js.map",
+    "runtime-main.js": "/Shopify-E-Commerce/static/js/runtime-main.227b42d6.js",
+    "runtime-main.js.map": "/Shopify-E-Commerce/static/js/runtime-main.227b42d6.js.map",
+    "static/js/2.f3ccb349.chunk.js": "/Shopify-E-Commerce/static/js/2.f3ccb349.chunk.js",
+    "static/js/2.f3ccb349.chunk.js.map": "/Shopify-E-Commerce/static/js/2.f3ccb349.chunk.js.map",
+    "index.html": "/Shopify-E-Commerce/index.html",
+    "precache-manifest.fd1c318d8a80a0d58d9ad38f09e8d984.js": "/Shopify-E-Commerce/precache-manifest.fd1c318d8a80a0d58d9ad38f09e8d984.js",
+    "service-worker.js": "/Shopify-E-Commerce/service-worker.js",
+    "static/css/main.228902f1.chunk.css.map": "/Shopify-E-Commerce/static/css/main.228902f1.chunk.css.map",
+    "static/js/2.f3ccb349.chunk.js.LICENSE.txt": "/Shopify-E-Commerce/static/js/2.f3ccb349.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.227b42d6.js",
+    "static/js/2.f3ccb349.chunk.js",
+    "static/css/main.228902f1.chunk.css",
+    "static/js/main.f28fabf1.chunk.js"
+  ]
+}
