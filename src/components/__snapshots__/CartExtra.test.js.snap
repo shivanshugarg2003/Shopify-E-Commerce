@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cart.js Extra Coverage matches snapshot with empty cart 1`] = `
+<div>
+  <div
+    style="padding: 2rem;"
+  >
+    <h2>
+      Your Cart
+    </h2>
+    <p>
+      Your cart is empty.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Cart.js Extra Coverage matches snapshot with items in cart 1`] = `
+<div>
+  <div
+    style="padding: 2rem;"
+  >
+    <h2>
+      Your Cart
+    </h2>
+    <div
+      style="border: 1px solid #ccc; border-radius: 5px; padding: 1rem; margin-bottom: 1rem;"
+    >
+      <h4>
+        Jeans
+      </h4>
+      <p
+        data-testid="quantity-2"
+      >
+        Quantity:
+        <button
+          style="margin: 0px 6px; padding: 4px 10px;"
+        >
+          −
+        </button>
+        1
+        <button
+          style="margin: 0px 6px; padding: 4px 10px;"
+        >
+          +
+        </button>
+      </p>
+      <p>
+        Total: ₹
+        2000
+      </p>
+      <button
+        style="background-color: rgb(220, 53, 69); color: rgb(255, 255, 255); padding: 6px 12px; border-radius: 4px; cursor: pointer; margin-top: 0.5rem;"
+      >
+        Remove
+      </button>
+    </div>
+    <hr />
+    <h3>
+      Total Amount: ₹
+      2000
+    </h3>
+    <button
+      style="background-color: rgb(0, 123, 255); color: rgb(255, 255, 255); padding: 10px 20px; border-radius: 5px; cursor: pointer;"
+    >
+      Proceed to Checkout
+    </button>
+  </div>
+</div>
+`;
