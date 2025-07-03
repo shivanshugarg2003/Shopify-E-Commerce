@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "47e0390931e3a7137c6a2a46cb161c70",
+    "revision": "a610182940982a59c27fb093899f3722",
     "url": "/Shopify-E-Commerce/index.html"
   },
   {
-    "revision": "22b0b90044a7e165fc4e",
+    "revision": "7a6407d4527e9af91c56",
     "url": "/Shopify-E-Commerce/static/css/main.228902f1.chunk.css"
   },
   {
-    "revision": "2a8fc4b3840f42f12026",
-    "url": "/Shopify-E-Commerce/static/js/2.f3ccb349.chunk.js"
+    "revision": "c0fd2560041d9adab571",
+    "url": "/Shopify-E-Commerce/static/js/2.5529b5af.chunk.js"
   },
   {
     "revision": "871e8585748db1cad8c9efc9ff3bbfad",
-    "url": "/Shopify-E-Commerce/static/js/2.f3ccb349.chunk.js.LICENSE.txt"
+    "url": "/Shopify-E-Commerce/static/js/2.5529b5af.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "22b0b90044a7e165fc4e",
-    "url": "/Shopify-E-Commerce/static/js/main.f28fabf1.chunk.js"
+    "revision": "7a6407d4527e9af91c56",
+    "url": "/Shopify-E-Commerce/static/js/main.2957262c.chunk.js"
   },
   {
     "revision": "e347d6d1eb90f6bf9b0b",

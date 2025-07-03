@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/Shopify-E-Commerce/static/css/main.228902f1.chunk.css",
-    "main.js": "/Shopify-E-Commerce/static/js/main.f28fabf1.chunk.js",
-    "main.js.map": "/Shopify-E-Commerce/static/js/main.f28fabf1.chunk.js.map",
+    "main.js": "/Shopify-E-Commerce/static/js/main.2957262c.chunk.js",
+    "main.js.map": "/Shopify-E-Commerce/static/js/main.2957262c.chunk.js.map",
     "runtime-main.js": "/Shopify-E-Commerce/static/js/runtime-main.227b42d6.js",
     "runtime-main.js.map": "/Shopify-E-Commerce/static/js/runtime-main.227b42d6.js.map",
-    "static/js/2.f3ccb349.chunk.js": "/Shopify-E-Commerce/static/js/2.f3ccb349.chunk.js",
-    "static/js/2.f3ccb349.chunk.js.map": "/Shopify-E-Commerce/static/js/2.f3ccb349.chunk.js.map",
+    "static/js/2.5529b5af.chunk.js": "/Shopify-E-Commerce/static/js/2.5529b5af.chunk.js",
+    "static/js/2.5529b5af.chunk.js.map": "/Shopify-E-Commerce/static/js/2.5529b5af.chunk.js.map",
     "index.html": "/Shopify-E-Commerce/index.html",
-    "precache-manifest.61727090e4f8f29ab975d8e0e951a376.js": "/Shopify-E-Commerce/precache-manifest.61727090e4f8f29ab975d8e0e951a376.js",
+    "precache-manifest.d309594c917ca7cd6b64e5f0aefac451.js": "/Shopify-E-Commerce/precache-manifest.d309594c917ca7cd6b64e5f0aefac451.js",
     "service-worker.js": "/Shopify-E-Commerce/service-worker.js",
     "static/css/main.228902f1.chunk.css.map": "/Shopify-E-Commerce/static/css/main.228902f1.chunk.css.map",
-    "static/js/2.f3ccb349.chunk.js.LICENSE.txt": "/Shopify-E-Commerce/static/js/2.f3ccb349.chunk.js.LICENSE.txt"
+    "static/js/2.5529b5af.chunk.js.LICENSE.txt": "/Shopify-E-Commerce/static/js/2.5529b5af.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.227b42d6.js",
-    "static/js/2.f3ccb349.chunk.js",
+    "static/js/2.5529b5af.chunk.js",
     "static/css/main.228902f1.chunk.css",
-    "static/js/main.f28fabf1.chunk.js"
+    "static/js/main.2957262c.chunk.js"
   ]
 }
